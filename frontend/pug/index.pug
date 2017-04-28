@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+    title
+    link(rel='manifest', href='manifest.json')
+
+    // inject:css
+    // endinject
+
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
+    script(src='//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js')
+
+  body(ng-app='app')
+    div(ui-view)
+
+  script(src='js/app.js')
+  // inject:js
+  // endinject
+  script(src='js/routes.js')
